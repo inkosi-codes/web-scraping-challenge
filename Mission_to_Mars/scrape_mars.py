@@ -12,7 +12,7 @@ def scrape():
     mars_news_url = 'https://mars.nasa.gov/news/'
     browser.visit(mars_news_url)
     time.sleep(2)
-    
+
     html = browser.html
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -103,4 +103,3 @@ def scrape():
     # Close browser and return dictionary
     browser.quit()
     return mars_data
-scrape()
